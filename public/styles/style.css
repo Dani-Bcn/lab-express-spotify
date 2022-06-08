@@ -195,15 +195,19 @@
             }
             h4{
                 font-size: 25px;
-                margin: 0 0 0 50px;
+                margin: 0 0 0 125px;
+            }
+            h2{
+                padding: 20px;
             }
             h5{
                 padding: 30px;
                 font-size: 26px;
-                margin: auto;
+                margin: auto auto auto 95px;
                 align-items: center;
                 text-align: center;
             }
+           
             button{
                 width: 50%;
                 height: 50%;
@@ -228,14 +232,27 @@
                 margin: 1px 0 0 0;
                 grid-template-columns: repeat(3,1fr);
                 width: 100%;
-                height: 100px;
+                height: 80px;
                 grid-column: 1/4;          
                 font-size: 20px;
                 align-items: center;
-                background-color: rgba(253, 195, 118, 0.664);
+               background: linear-gradient(to right,rgba(255, 200, 129, 0.671), rgba(255, 192, 203, 0));
                 text-align: start;
                 z-index: 2;
-            }            
+                  color: rgb(255, 250, 190);
+            }      
+            .titleAudio{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                margin: 0;
+                grid-column: 1/4;
+                height: 80px;
+                background: linear-gradient(to right,rgba(255, 214, 160, 0.519), rgba(255, 192, 203, 0));
+                z-index: 2;
+                color: #fffdea;
+            }      
   
      
       

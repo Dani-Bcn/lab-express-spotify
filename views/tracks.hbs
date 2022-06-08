@@ -1,6 +1,8 @@
-  
-    <h1>{{#each trackResult}}</h1>
-         <div class="divAudio" > 
+    <div class="titleAudio">
+        <h5>Title</h5> 
+    </div>
+    <h1>{{#each trackResult}}</h1>    
+        <div class="divAudio" > 
             <h4>{{this.name}}</h4>            
             <audio controls="play" src="{{this.preview_url}}"></audio>         
         </div>

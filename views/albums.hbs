@@ -1,8 +1,8 @@
 
 {{#each albumsResult}}  
-    <div> 
+    <div class="divAlbums"> 
         <h5> {{name}}</h5>
-        <img src="{{images.[1].url}}" alt="">               
+        <img class="imgAlbum" src="{{images.[1].url}}" alt="">               
         <a href="/tracks/{{id}}"><button type="submit">Show songs</button></a>             
     </div>        
 {{/each}}

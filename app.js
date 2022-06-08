@@ -9,7 +9,7 @@ const app = express();
 
 app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public/'));
 
 
 // setting the spotify-api goes here:
@@ -52,7 +52,6 @@ app.get('/albums/:artistId', (req, res) => {
     console.error(err);
   })
 })
-
 app.get("/tracks/:albumId",(req,res )=> { 
   const albumId=req.params.albumId 
   spotifyApi.getAlbumTracks(albumId, { limit : 5, offset : 1 })
@@ -63,17 +62,5 @@ app.get("/tracks/:albumId",(req,res )=> {
    })
   .catch((err)=> {    console.log('Something went wrong!', err);
   });
-})
-
-
-
-
-
-
-
-
-
-
-
-  
+})  
 app.listen(3000, () => console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊'));
